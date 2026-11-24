@@ -34,6 +34,7 @@ export const projects = [
       'JavaScript',
       'React Router',
       'React Three Fiber',
+      'Supabase',
       'Motion',
     ],
     highlights: [
