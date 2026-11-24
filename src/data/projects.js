@@ -32,7 +32,6 @@ export const projects = [
     stack: [
       'React',
       'JavaScript',
-      'Supabase',
       'React Router',
       'React Three Fiber',
       'Motion',
@@ -40,7 +39,7 @@ export const projects = [
     highlights: [
       'Shop, product details, collections, lookbook, wishlist, and bag',
       'Cinematic intro and video-led hero with reduced-motion fallback',
-      'Interactive 3D presentation and Supabase-powered authentication',
+      'Interactive 3D presentation and polished account experience',
       'Demo checkout UI — no real payments or orders are processed',
     ],
     live: 'https://z-unseen.vercel.app/',
