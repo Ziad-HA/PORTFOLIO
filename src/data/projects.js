@@ -74,29 +74,5 @@ export const projects = [
     image: '/projects/d4rk-preview.webp',
     alt: 'D4RK streetwear accessories website preview',
   },
-  {
-    number: '04',
-    title: 'NOBI Coach',
-    category: 'ONLINE COACHING / WEB DEVELOPMENT',
-    description:
-      'An online coaching platform with a bold editorial interface, coaching programs, packages, client results, feedback, booking, and practical fitness tools.',
-    stack: [
-      'React',
-      'JavaScript',
-      'Motion',
-      'React Router',
-      'jsPDF',
-      'Vite',
-    ],
-    highlights: [
-      'Programs, coaching packages, results, client feedback, and booking flow',
-      'Interactive calculator and branded A4 PDF generation',
-      'Payment information with copy-to-clipboard interactions',
-      'Responsive layouts and motion-led section transitions',
-    ],
-    live: 'https://nobi-coach.vercel.app/',
-    repo: 'https://github.com/Ziad-HA/COACHING',
-    image: '/projects/nobi-coach-preview.jpg',
-    alt: 'NOBI Coach website preview',
-  },
+
 ]
