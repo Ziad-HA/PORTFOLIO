@@ -1,7 +1,30 @@
-
 export const projects = [
   {
     number: '01',
+    title: 'STREET — Streetwear',
+    category: 'E-COMMERCE / WEB DEVELOPMENT',
+    description:
+      'A modern streetwear e-commerce experience built with React, focused on bold product presentation, smooth discovery, and a clean shopping flow across desktop and mobile.',
+    stack: [
+      'React',
+      'JavaScript',
+      'Vite',
+      'React Router',
+      'CSS',
+    ],
+    highlights: [
+      'Dedicated pages for product categories and individual products',
+      'Product image galleries with continuous horizontal motion',
+      'Complete-the-outfit recommendations across product categories',
+      'Responsive storefront with persistent navigation and shopping flow',
+    ],
+    live: 'https://street-zeta.vercel.app/',
+    repo: 'https://github.com/Ziad-HA/street',
+    image: '/projects/street-preview-placeholder.svg',
+    alt: 'STREET project image placeholder — replace with a storefront screenshot',
+  },
+  {
+    number: '02',
     title: 'UNSEEN — Streetwear',
     category: 'E-COMMERCE / WEB DEVELOPMENT',
     description:
@@ -22,11 +45,11 @@ export const projects = [
     ],
     live: 'https://z-unseen.vercel.app/',
     repo: 'https://github.com/Ziad-HA/UNSEEN',
-    image: "/projects/unseen-preview.webp",
+    image: '/projects/unseen-preview.webp',
     alt: 'UNSEEN streetwear storefront preview',
   },
   {
-    number: '02',
+    number: '03',
     title: 'D4RK — Streetwear Accessories',
     category: 'E-COMMERCE / WEB DEVELOPMENT',
     description:
@@ -52,7 +75,7 @@ export const projects = [
     alt: 'D4RK streetwear accessories website preview',
   },
   {
-    number: '03',
+    number: '04',
     title: 'NOBI Coach',
     category: 'ONLINE COACHING / WEB DEVELOPMENT',
     description:
