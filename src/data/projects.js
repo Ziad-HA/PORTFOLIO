@@ -20,8 +20,8 @@ export const projects = [
     ],
     live: 'https://street-zeta.vercel.app/',
     repo: 'https://github.com/Ziad-HA/street',
-    image: '/projects/street-preview-placeholder.svg',
-    alt: 'STREET project image placeholder — replace with a storefront screenshot',
+    image: '/projects/street-preview.webp',
+    alt: 'STREET streetwear storefront preview',
   },
   {
     number: '02',
