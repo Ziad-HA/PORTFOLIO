@@ -1,11 +1,10 @@
-
 import { motion } from 'motion/react'
 
 const highlights = [
   {
     number: '01',
-    title: 'Web Development',
-    description: 'Building responsive and interactive web experiences, front to back.',
+    title: 'Frontend Development',
+    description: 'Building responsive and interactive web interfaces for desktop and mobile.',
   },
   {
     number: '02',
@@ -15,7 +14,7 @@ const highlights = [
   {
     number: '03',
     title: 'Creative Thinking',
-    description: 'Turning ideas into clean and functional digital products.',
+    description: 'Turning ideas into clean and functional digital experiences.',
   },
 ]
 
