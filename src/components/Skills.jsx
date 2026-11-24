@@ -1,8 +1,7 @@
-
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 
-const categories = ['All', 'Frontend', 'Backend', 'Design', 'Tools']
+const categories = ['All', 'Frontend', 'Design', 'Tools']
 
 const skills = [
   { name: 'React', level: 'Library', category: 'Frontend' },
@@ -12,23 +11,18 @@ const skills = [
   { name: 'Tailwind CSS', level: 'Styling', category: 'Frontend' },
   { name: 'Responsive UI', level: 'Development', category: 'Frontend' },
   { name: 'Three.js', level: '3D Web', category: 'Frontend' },
-  { name: 'Node.js', level: 'Runtime', category: 'Backend' },
-  { name: 'Express', level: 'Framework', category: 'Backend' },
-  { name: 'MongoDB', level: 'Database', category: 'Backend' },
-  { name: 'Supabase', level: 'Backend as a Service', category: 'Backend' },
   { name: 'Figma', level: 'Design Tool', category: 'Design' },
   { name: 'UI / UX Design', level: 'Design', category: 'Design' },
   { name: 'Git / GitHub', level: 'Version Control', category: 'Tools' },
   { name: 'VS Code', level: 'Editor', category: 'Tools' },
-  { name: 'Postman', level: 'API Testing', category: 'Tools' },
   { name: 'Vercel', level: 'Deployment', category: 'Tools' },
 ]
 
 const services = [
   {
     number: '01',
-    title: 'Web Development',
-    copy: 'Developing modern web apps with React, Node.js, Express and MongoDB, with reusable components and clean code.',
+    title: 'Frontend Development',
+    copy: 'Building modern, responsive interfaces with React, reusable components, and clean code.',
   },
   {
     number: '02',
