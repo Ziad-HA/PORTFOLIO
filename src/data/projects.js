@@ -74,7 +74,6 @@ export const projects = [
     image: '/projects/d4rk-preview.webp',
     alt: 'D4RK streetwear accessories website preview',
   },
-,
   {
     number: '04',
     title: 'FORMA — Fitness Coaching',
