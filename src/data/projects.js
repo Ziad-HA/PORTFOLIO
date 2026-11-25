@@ -74,5 +74,32 @@ export const projects = [
     image: '/projects/d4rk-preview.webp',
     alt: 'D4RK streetwear accessories website preview',
   },
-
+,
+  {
+    number: '04',
+    title: 'FORMA — Fitness Coaching',
+    category: 'FITNESS / WEB DEVELOPMENT',
+    description:
+      'A responsive online fitness-coaching experience built with React. FORMA brings training programs, coaching packages, transformations, booking UI, and a fitness calculator into one polished multi-page website.',
+    stack: [
+      'React',
+      'JavaScript',
+      'Vite',
+      'React Router',
+      'Motion',
+      'CSS',
+      'jsPDF',
+    ],
+    highlights: [
+      'Multi-page coaching website with responsive navigation',
+      'Programs, packages, transformations, and client feedback sections',
+      'Booking demonstration flow and WhatsApp contact actions',
+      'Calorie and body-fat estimate calculator with downloadable PDF',
+    ],
+    live: 'https://nobi-coach.vercel.app/',
+    liveLabel: 'VISIT LIVE SITE',
+    repo: 'https://github.com/Ziad-HA/FORMA',
+    image: '/projects/nobi-coach-preview.jpg',
+    alt: 'FORMA online fitness coaching website preview',
+  },
 ]
