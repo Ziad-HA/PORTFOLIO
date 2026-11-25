@@ -13,9 +13,9 @@ export default function Hero() {
             FRONTEND DEVELOPER · REACT & NEXT.JS
           </motion.p>
 
-          <h1 className="hero-title" aria-label="Ziad Hesham, Frontend Developer">
+          <h1 className="hero-title" aria-label="Nobi, Frontend Developer">
             <span className="hero-name" aria-hidden="true">
-              {'ZIAD'.split('').map((letter, i) => (
+              {'NOBI'.split('').map((letter, i) => (
                 <span className="hero-letter" key={letter + i}>
                   <motion.span initial={{ y: '110%' }} animate={{ y: 0 }} transition={{ delay: 0.25 + i * 0.09, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>
                     {letter}
@@ -45,17 +45,23 @@ export default function Hero() {
         <motion.div className="hero-terminal" initial={{ opacity: 0, y: 40, scale: 0.96 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ delay: 0.45, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>
           <div className="terminal-header">
             <div className="terminal-dots"><span className="dot red" /><span className="dot yellow" /><span className="dot green" /></div>
-            <div className="terminal-title">ziad.profile.ts</div>
+            <div className="terminal-title">nobi.profile.ts</div>
             <span className="terminal-badge">AVAILABLE</span>
           </div>
           <div className="terminal-body">
             <pre><code>
-              <span className="syntax-keyword">const</span> <span className="syntax-def">developer</span> = {'{'}{'\n'}
-              {'  '}<span className="syntax-prop">name</span>: <span className="syntax-str">'Ziad Hesham'</span>,{'\n'}
-              {'  '}<span className="syntax-prop">focus</span>: <span className="syntax-str">'Frontend Development'</span>,{'\n'}
-              {'  '}<span className="syntax-prop">stack</span>: [<span className="syntax-str">'React'</span>, <span className="syntax-str">'Next.js'</span>, <span className="syntax-str">'JavaScript'</span>],{'\n'}
-              {'  '}<span className="syntax-prop">principles</span>: [<span className="syntax-str">'Clarity'</span>, <span className="syntax-str">'Performance'</span>, <span className="syntax-str">'Usability'</span>],{'\n'}
-              {'  '}<span className="syntax-prop">basedIn</span>: <span className="syntax-str">'Alexandria, Egypt'</span>{'\n'}
+              <span className="syntax-keyword">const</span> <span className="syntax-def">developer</span> = {'{'}{'
+'}
+              {'  '}<span className="syntax-prop">name</span>: <span className="syntax-str">'Nobi'</span>,{'
+'}
+              {'  '}<span className="syntax-prop">focus</span>: <span className="syntax-str">'Frontend Development'</span>,{'
+'}
+              {'  '}<span className="syntax-prop">stack</span>: [<span className="syntax-str">'React'</span>, <span className="syntax-str">'Next.js'</span>, <span className="syntax-str">'JavaScript'</span>],{'
+'}
+              {'  '}<span className="syntax-prop">principles</span>: [<span className="syntax-str">'Clarity'</span>, <span className="syntax-str">'Performance'</span>, <span className="syntax-str">'Usability'</span>],{'
+'}
+              {'  '}<span className="syntax-prop">basedIn</span>: <span className="syntax-str">'Alexandria, Egypt'</span>{'
+'}
               {'};'}
             </code></pre>
           </div>
