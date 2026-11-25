@@ -21,7 +21,7 @@ export default function Contact() {
           <span>Alexandria, Egypt · Available for selected projects</span>
         </div>
       </motion.div>
-      <footer className="footer"><span>© {new Date().getFullYear()} ZIAD HESHAM</span><a href="#top">BACK TO TOP ↑</a></footer>
+      <footer className="footer"><span>© {new Date().getFullYear()} NOBI</span><a href="#top">BACK TO TOP ↑</a></footer>
     </section>
   )
 }
