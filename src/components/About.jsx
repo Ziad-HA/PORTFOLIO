@@ -17,7 +17,7 @@ export default function About() {
       <div className="about-grid">
         <motion.div className="about-lead" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.7 }}>
           <p>
-            I’m Ziad, a frontend developer based in Alexandria, Egypt. I build modern websites that bring strong visual direction and practical functionality together.
+            I’m Nobi, a frontend developer based in Alexandria, Egypt. I build modern websites that bring strong visual direction and practical functionality together.
           </p>
           <p className="about-secondary">
             My work is centered on React, responsive interfaces, and interactive experiences. I care about the details users notice — and the structure developers have to maintain.
