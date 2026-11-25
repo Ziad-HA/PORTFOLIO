@@ -34,8 +34,8 @@ export default function Navbar() {
 
   return (
     <motion.header className="nav" initial={{ opacity: 0, y: -25 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>
-      <a className="nav-logo" href="#top" aria-label="Ziad Hesham — back to top">
-        ZIAD HESHAM<span> / </span>PORTFOLIO
+      <a className="nav-logo" href="#top" aria-label="Nobi — back to top">
+        NOBI<span> / </span>PORTFOLIO
       </a>
       <nav aria-label="Main navigation">
         {links.map((link, index) => (
