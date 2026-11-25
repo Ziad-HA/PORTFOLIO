@@ -1695,3 +1695,272 @@ html {
 .skill-grid {
   margin-top: 20px;
 }
+
+
+/* PORTFOLIO CONTENT & ACCESSIBILITY POLISH */
+:focus-visible {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 4px;
+}
+
+.hero-name {
+  display: block;
+}
+
+.hero-role-line {
+  display: block;
+  font-size: clamp(36px, 5.2vw, 68px);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  margin-top: 12px;
+}
+
+.hero-role-line .outline {
+  color: var(--accent);
+}
+
+.hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 26px;
+}
+
+.hero-proof span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 11px;
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-meta a {
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  transition: color 0.2s ease;
+}
+
+.hero-meta a:hover,
+.text-link:hover,
+.contact-socials a:hover,
+.footer a:hover {
+  color: var(--accent);
+}
+
+.about-secondary {
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.text-link {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 24px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.services-heading {
+  margin-top: 54px;
+}
+
+.services-heading h3 {
+  margin-top: 12px;
+  font-family: var(--font-display);
+  font-size: clamp(24px, 4vw, 38px);
+  letter-spacing: -0.04em;
+}
+
+.project-highlights {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-highlights li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.project-highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.project-details {
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.project-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 0;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details summary span {
+  color: var(--accent);
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.project-details[open] summary span {
+  transform: rotate(45deg);
+}
+
+.project-details-content {
+  display: grid;
+  gap: 15px;
+  padding: 0 0 18px;
+}
+
+.project-details-content h4 {
+  margin-bottom: 5px;
+  color: var(--accent);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.project-details-content p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.contact-intro {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.contact-panel h2 span {
+  color: var(--accent);
+}
+
+.contact-socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+  margin-top: 42px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.contact-socials a {
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.contact-socials span {
+  margin-left: auto;
+  font-size: 11px;
+}
+
+.footer a {
+  transition: color 0.2s ease;
+}
+
+@media (max-width: 860px) {
+  .hero-meta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-role-line {
+    font-size: clamp(34px, 7vw, 58px);
+  }
+
+  .contact-socials span {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hero-meta a {
+    margin-left: 0;
+  }
+
+  .hero-proof {
+    gap: 6px;
+    margin-top: 20px;
+  }
+
+  .hero-proof span {
+    font-size: 9px;
+    padding: 6px 9px;
+  }
+
+  .hero-role-line {
+    font-size: clamp(31px, 8vw, 44px);
+  }
+
+  .about-secondary {
+    font-size: 15px;
+  }
+
+  .contact-socials {
+    gap: 14px 18px;
+  }
+
+  .project-body {
+    padding: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
