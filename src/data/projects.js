@@ -95,7 +95,7 @@ export const projects = [
       'Booking demonstration flow and WhatsApp contact actions',
       'Calorie and body-fat estimate calculator with downloadable PDF',
     ],
-    live: 'https://nobi-coach.vercel.app/',
+    live: 'https://forma99.vercel.app/',
     liveLabel: 'VISIT LIVE SITE',
     repo: 'https://github.com/Ziad-HA/FORMA',
     image: '/projects/nobi-coach-preview.jpg',
