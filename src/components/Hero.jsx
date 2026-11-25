@@ -50,18 +50,12 @@ export default function Hero() {
           </div>
           <div className="terminal-body">
             <pre><code>
-              <span className="syntax-keyword">const</span> <span className="syntax-def">developer</span> = {'{'}{'
-'}
-              {'  '}<span className="syntax-prop">name</span>: <span className="syntax-str">'Nobi'</span>,{'
-'}
-              {'  '}<span className="syntax-prop">focus</span>: <span className="syntax-str">'Frontend Development'</span>,{'
-'}
-              {'  '}<span className="syntax-prop">stack</span>: [<span className="syntax-str">'React'</span>, <span className="syntax-str">'Next.js'</span>, <span className="syntax-str">'JavaScript'</span>],{'
-'}
-              {'  '}<span className="syntax-prop">principles</span>: [<span className="syntax-str">'Clarity'</span>, <span className="syntax-str">'Performance'</span>, <span className="syntax-str">'Usability'</span>],{'
-'}
-              {'  '}<span className="syntax-prop">basedIn</span>: <span className="syntax-str">'Alexandria, Egypt'</span>{'
-'}
+              <span className="syntax-keyword">const</span> <span className="syntax-def">developer</span> = {'{'}{'\n'}
+              {'  '}<span className="syntax-prop">name</span>: <span className="syntax-str">'Nobi'</span>,{'\n'}
+              {'  '}<span className="syntax-prop">focus</span>: <span className="syntax-str">'Frontend Development'</span>,{'\n'}
+              {'  '}<span className="syntax-prop">stack</span>: [<span className="syntax-str">'React'</span>, <span className="syntax-str">'Next.js'</span>, <span className="syntax-str">'JavaScript'</span>],{'\n'}
+              {'  '}<span className="syntax-prop">principles</span>: [<span className="syntax-str">'Clarity'</span>, <span className="syntax-str">'Performance'</span>, <span className="syntax-str">'Usability'</span>],{'\n'}
+              {'  '}<span className="syntax-prop">basedIn</span>: <span className="syntax-str">'Alexandria, Egypt'</span>{'\n'}
               {'};'}
             </code></pre>
           </div>
