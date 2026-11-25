@@ -1,130 +1,69 @@
-
 import { motion } from 'motion/react'
 import HeroScene from './HeroScene'
 
 export default function Hero() {
   return (
     <section id="top" className="hero">
-      <div className="hero-canvas">
-        <HeroScene />
-      </div>
-
+      <div className="hero-canvas"><HeroScene /></div>
       <div className="hero-vignette" />
 
       <div className="hero-content">
         <div className="hero-copy">
-          <motion.p
-            className="eyebrow"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15 }}
-          >
-            Junior Software Developer
+          <motion.p className="eyebrow" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
+            FRONTEND DEVELOPER · REACT & NEXT.JS
           </motion.p>
 
-          <h1 className="hero-title" aria-label="NOBI, Web Developer">
+          <h1 className="hero-title" aria-label="Ziad Hesham, Frontend Developer">
             <span className="hero-name" aria-hidden="true">
-              {'NOBI'.split('').map((letter, i) => (
+              {'ZIAD'.split('').map((letter, i) => (
                 <span className="hero-letter" key={letter + i}>
-                  <motion.span
-                    initial={{ y: '110%' }}
-                    animate={{ y: 0 }}
-                    transition={{
-                      delay: 0.25 + i * 0.09,
-                      duration: 0.8,
-                      ease: [0.22, 1, 0.36, 1],
-                    }}
-                  >
+                  <motion.span initial={{ y: '110%' }} animate={{ y: 0 }} transition={{ delay: 0.25 + i * 0.09, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>
                     {letter}
                   </motion.span>
                 </span>
               ))}
             </span>
-            <motion.span
-              className="hero-role-line"
-              aria-hidden="true"
-              initial={{ opacity: 0, x: -24 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.75, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <span className="outline">Web</span> Developer
-              <motion.i
-                className="hero-underline"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ delay: 1.1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              />
+            <motion.span className="hero-role-line" aria-hidden="true" initial={{ opacity: 0, x: -24 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.75, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
+              <span className="outline">Frontend</span> Developer
+              <motion.i className="hero-underline" initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: 1.1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }} />
             </motion.span>
           </h1>
 
-          <motion.p
-            className="lede"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-          >
-            I create responsive websites and interactive web experiences,
-            turning ideas into functional digital products.
+          <motion.p className="lede" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
+            I design and build responsive websites and digital experiences for brands and businesses — with a focus on thoughtful UI, smooth interactions, and reliable frontend code.
           </motion.p>
 
-          <motion.div
-            className="hero-actions"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.55 }}
-          >
-            <a className="btn-primary" href="#work">
-              See projects
-            </a>
-
-            <a className="btn-ghost" href="#contact">
-              Contact me
-            </a>
+          <motion.div className="hero-actions" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.55 }}>
+            <a className="btn-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+            <a className="btn-ghost" href="#contact">Start a project</a>
           </motion.div>
+          <div className="hero-proof" aria-label="Core focus">
+            <span>React</span><span>Next.js</span><span>Responsive UI</span><span>Interaction design</span>
+          </div>
         </div>
 
-        {/* High-tech developer code card (Desktop & Tablet) */}
-        <motion.div
-          className="hero-terminal"
-          initial={{ opacity: 0, y: 40, scale: 0.96 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ delay: 0.45, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        >
+        <motion.div className="hero-terminal" initial={{ opacity: 0, y: 40, scale: 0.96 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ delay: 0.45, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>
           <div className="terminal-header">
-            <div className="terminal-dots">
-              <span className="dot red" />
-              <span className="dot yellow" />
-              <span className="dot green" />
-            </div>
-            <div className="terminal-title">developer.config.ts</div>
-            <span className="terminal-badge">READY</span>
+            <div className="terminal-dots"><span className="dot red" /><span className="dot yellow" /><span className="dot green" /></div>
+            <div className="terminal-title">ziad.profile.ts</div>
+            <span className="terminal-badge">AVAILABLE</span>
           </div>
-
           <div className="terminal-body">
-            <pre>
-              <code>
-                <span className="syntax-keyword">const</span> <span className="syntax-def">developer</span> = &#123;{'\n'}
-                {'  '}<span className="syntax-prop">name</span>: <span className="syntax-str">'Ziad Hesham'</span>,{'\n'}
-                {'  '}<span className="syntax-prop">alias</span>: <span className="syntax-str">'NOBI'</span>,{'\n'}
-                {'  '}<span className="syntax-prop">role</span>: <span className="syntax-str">'Web Developer'</span>,{'\n'}
-                {'  '}<span className="syntax-prop">core</span>: [<span className="syntax-str">'React'</span>, <span className="syntax-str">'JavaScript'</span>, <span className="syntax-str">'Modern UI'</span>],{'\n'}
-                {'  '}<span className="syntax-prop">mission</span>: <span className="syntax-str">'Building clean, high-performance web apps'</span>,{'\n'}
-                {'  '}<span className="syntax-prop">openForWork</span>: <span className="syntax-bool">true</span>{'\n'}
-                &#125;;
-              </code>
-            </pre>
+            <pre><code>
+              <span className="syntax-keyword">const</span> <span className="syntax-def">developer</span> = {'{'}{'\n'}
+              {'  '}<span className="syntax-prop">name</span>: <span className="syntax-str">'Ziad Hesham'</span>,{'\n'}
+              {'  '}<span className="syntax-prop">focus</span>: <span className="syntax-str">'Frontend Development'</span>,{'\n'}
+              {'  '}<span className="syntax-prop">stack</span>: [<span className="syntax-str">'React'</span>, <span className="syntax-str">'Next.js'</span>, <span className="syntax-str">'JavaScript'</span>],{'\n'}
+              {'  '}<span className="syntax-prop">principles</span>: [<span className="syntax-str">'Clarity'</span>, <span className="syntax-str">'Performance'</span>, <span className="syntax-str">'Usability'</span>],{'\n'}
+              {'  '}<span className="syntax-prop">basedIn</span>: <span className="syntax-str">'Alexandria, Egypt'</span>{'\n'}
+              {'};'}
+            </code></pre>
           </div>
-
-          <div className="terminal-footer">
-            <span className="terminal-status-dot" />
-            <span>Interactive & Responsive Experience</span>
-          </div>
+          <div className="terminal-footer"><span className="terminal-status-dot" /><span>Thoughtful interfaces. Built for real screens.</span></div>
         </motion.div>
       </div>
 
-      <div className="hero-meta">
-        <span className="pulse">AVAILABLE FOR WORK</span>
-      </div>
+      <div className="hero-meta"><span className="pulse">OPEN TO SELECT PROJECTS</span><a href="#about">SCROLL TO EXPLORE ↓</a></div>
     </section>
   )
 }
