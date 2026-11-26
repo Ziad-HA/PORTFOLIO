@@ -42,7 +42,7 @@ export default function HeroScene() {
         className="hero-spotlight"
         style={{
           background:
-            'radial-gradient(650px circle at var(--mx, 50%) var(--my, 35%), rgba(40, 215, 242, 0.12), transparent 60%)',
+            'radial-gradient(650px circle at var(--mx, 50%) var(--my, 35%), rgba(127, 176, 143, 0.12), transparent 60%)',
         }}
       />
 
