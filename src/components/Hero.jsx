@@ -47,7 +47,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.div className="hero-actions" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.55 }}>
-            <a className="btn-primary" href="#work">Explore my{' '}<span className="btn-work">work</span></a>
+            <a className="btn-primary" href="#work">Explore my  work <span aria-hidden="true">↗</span></a>
             <a className="btn-ghost" href="#contact">Start a project</a>
           </motion.div>
           <ul className="hero-proof" aria-label="Core focus">
@@ -70,7 +70,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="hero-meta"><span className="pulse">OPEN TO SELECT PROJECTS</span><a href="#about">SCROLL TO EXPLORE</a></div>
+      <div className="hero-meta"><span className="pulse">OPEN TO SELECT PROJECTS</span><a href="#about">SCROLL TO EXPLORE ↓</a></div>
     </section>
   )
 }
