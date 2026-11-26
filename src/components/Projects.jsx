@@ -7,9 +7,9 @@ export default function Projects() {
   return (
     <section id="work" className="section work">
       <div className="section-head">
-        <p className="kicker">03 — SELECTED WORK</p>
+        <p className="kicker">02 — SELECTED WORK</p>
         <h2>BUILT TO BE<br /><span>EXPERIENCED.</span></h2>
-        <p className="hint">A selection of frontend projects exploring e-commerce, brand experiences, and service websites. Open a live build or expand the notes to see what went into it.</p>
+        <p className="hint">A selection of frontend projects exploring e-commerce and brand experiences.</p>
       </div>
 
       <div className="project-grid">
@@ -26,14 +26,13 @@ export default function Projects() {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
 
-              {project.highlights && <ul className="project-highlights">{project.highlights.map((item) => <li key={item}>{item}</li>)}</ul>}
-
               <details className="project-details">
                 <summary>Project notes <span aria-hidden="true">＋</span></summary>
                 <div className="project-details-content">
                   <div><h4>Focus</h4><p>{project.focus}</p></div>
                   <div><h4>Implementation</h4><p>{project.implementation}</p></div>
                   <div><h4>Key consideration</h4><p>{project.consideration}</p></div>
+                  {project.highlights && <ul className="project-highlights">{project.highlights.map((item) => <li key={item}>{item}</li>)}</ul>}
                 </div>
               </details>
 

@@ -1,0 +1,75 @@
+/* Shorter page: tighter sections, projects two per row on every screen */
+
+.app .section { padding-top: 48px; padding-bottom: 48px; }
+.app .section + .section { padding-top: 0; }
+.app #work { padding-top: 0; scroll-margin-top: 80px; }
+.app #about { padding-bottom: 32px; scroll-margin-top: 80px; }
+.app .about-title { margin-top: 8px; font-family: var(--font-display); font-size: clamp(24px, 3.6vw, 40px); line-height: 1.1; letter-spacing: -0.04em; }
+.app .about-title span { color: var(--accent); }
+.app .about-text { max-width: 560px; margin-top: 12px; font-size: 16px; line-height: 1.6; color: var(--muted); }
+.app .about-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; list-style: none; }
+.app .about-chips li { padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 12px; color: var(--ink); }
+.app .section-head h2 { font-size: clamp(30px, 5vw, 54px); }
+.app .skill-tabs { margin-top: 20px; }
+.app .skill-grid { margin-top: 12px; gap: 8px; }
+.app .skill-grid li { min-height: 0; padding: 12px 14px; font-size: 15px; gap: 4px; }
+.app .services-heading { margin-top: 32px; }
+.app .service-grid { gap: 10px; }
+.app .service-card { padding: 18px; }
+.app .service-number { margin-bottom: 8px; }
+.app .service-card h3 { font-size: 18px; }
+
+.app .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+.app .project-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.app .project-media { height: auto; aspect-ratio: 2.26 / 1; }
+.app .project-media img { padding: 0; width: 100%; height: 100%; object-fit: cover; }
+.app .project-body { padding: 18px; }
+.app .project-body h3 { font-size: 22px; }
+.app .project-details { margin-top: 12px; }
+
+@media (min-width: 700px) {
+  /* the odd one out lies on its side so it stays short */
+  .app .project-card:last-child:nth-child(odd) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+  }
+}
+
+@media (max-width: 699px) {
+  .app .section { padding-top: 36px; padding-bottom: 36px; }
+  .app .project-grid { gap: 10px; }
+  .app .project-body { padding: 10px; }
+  .app .project-body h3 { font-size: 14px; line-height: 1.25; margin: 0 0 8px; letter-spacing: 0; }
+  .app .project-top,
+  .app .project-body > p,
+  .app .project-body .tags,
+  .app .project-details,
+  .app .project-image-overlay { display: none; }
+  .app .project-links { flex-direction: column; gap: 2px; font-size: 10px; }
+  .app .project-links a { display: flex; align-items: center; justify-content: space-between; min-height: 32px; }
+
+  /* the full-width card has room for its description */
+  .app .project-card:last-child:nth-child(odd) .project-body > p { display: block; font-size: 13px; margin-bottom: 8px; }
+  .app .project-card:last-child:nth-child(odd) .project-links { flex-direction: row; gap: 20px; }
+
+
+  .app .skill-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .app .skill-grid li { padding: 10px 8px; font-size: 12px; justify-content: center; }
+  .app .skill-grid em,
+  .app .service-card p,
+  .app .section-head .hint { display: none; }
+  .app .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .app .service-card { padding: 14px 12px; }
+  .app .service-card h3 { font-size: 14px; margin: 0; }
+  .app .contact-panel { padding: 26px 18px; }
+
+  /* shorter hero: less air, long paragraph and footer line removed */
+  .app .hero { min-height: 0; }
+  .app .hero .hero-content { padding-top: 96px; padding-bottom: 24px; gap: 24px; }
+  .app .hero .eyebrow { margin-bottom: 10px; }
+  .app .hero .lede,
+  .app .hero .hero-proof,
+  .app .hero .hero-meta { display: none; }
+  .app .hero .hero-actions { margin-top: 20px; }
+}

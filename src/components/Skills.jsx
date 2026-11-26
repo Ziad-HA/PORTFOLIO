@@ -31,7 +31,7 @@ export default function Skills() {
   return (
     <section id="skills" className="section skills">
       <div className="section-head">
-        <p className="kicker">02 — EXPERTISE</p>
+        <p className="kicker">03 — EXPERTISE</p>
         <h2>WHAT I BRING<br /><span>TO THE BUILD.</span></h2>
         <p className="hint">A focused frontend toolkit for building responsive, polished web experiences.</p>
       </div>

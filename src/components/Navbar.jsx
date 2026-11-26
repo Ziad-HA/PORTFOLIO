@@ -3,8 +3,8 @@ import { motion } from 'motion/react'
 
 const links = [
   { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Expertise' },
   { href: '#work', label: 'Work' },
+  { href: '#skills', label: 'Expertise' },
   { href: '#contact', label: 'Contact' },
 ]
 

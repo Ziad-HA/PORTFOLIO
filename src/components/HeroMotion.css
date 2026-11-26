@@ -1,0 +1,269 @@
+/* Extra motion and detail layered on the hero */
+
+/* a light sweep passes through the name, letter after letter */
+.hero .hero-letter > span {
+  background-image:
+    linear-gradient(105deg, transparent 40%, #fff 50%, transparent 60%),
+    linear-gradient(180deg, var(--ink) 25%, var(--accent) 100%);
+  background-size: 300% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  animation: heroShine 4.5s ease-in-out infinite;
+  animation-delay: calc(1.4s + var(--i) * 0.14s);
+}
+
+@keyframes heroShine {
+  0% { background-position: 100% 0, 0 0; }
+  40%, 100% { background-position: 0% 0, 0 0; }
+}
+
+.hero .hero-underline {
+  overflow: hidden;
+}
+
+.hero .hero-underline::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 30%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  animation: heroRun 2.8s ease-in-out 2s infinite both;
+}
+
+@keyframes heroRun {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(340%); }
+}
+
+.hero .eyebrow::after {
+  content: '_';
+  animation: heroBlink 1s steps(1) infinite;
+}
+
+@keyframes heroBlink {
+  50% { opacity: 0; }
+}
+
+/* moving background */
+.hero .hero-grid-pattern {
+  animation: heroGrid 6s linear infinite;
+}
+
+@keyframes heroGrid {
+  to { background-position: 50px 50px; }
+}
+
+.hero-symbols {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  font-family: Consolas, Menlo, monospace;
+  color: var(--accent);
+}
+
+.hero-symbols span {
+  position: absolute;
+  opacity: 0.22;
+  font-size: 18px;
+  animation: heroFloat 7s ease-in-out infinite alternate;
+}
+
+.hero-symbols span:nth-child(1) { top: 13%; right: 9%; font-size: 24px; }
+.hero-symbols span:nth-child(2) { top: 24%; right: 24%; animation-delay: -2s; }
+.hero-symbols span:nth-child(3) { top: 33%; right: 5%; animation-delay: -4s; }
+.hero-symbols span:nth-child(4) { top: 8%; left: 46%; animation-delay: -1s; }
+.hero-symbols span:nth-child(5) { top: 57%; right: 4%; animation-delay: -5s; }
+.hero-symbols span:nth-child(6) { top: 66%; left: 3%; animation-delay: -3s; }
+.hero-symbols span:nth-child(7) { top: 80%; right: 14%; animation-delay: -6s; }
+.hero-symbols span:nth-child(8) { top: 46%; left: 55%; animation-delay: -2.5s; }
+
+@keyframes heroFloat {
+  from { transform: translate(0, 0) rotate(-8deg); opacity: 0.12; }
+  to { transform: translate(-14px, -34px) rotate(10deg); opacity: 0.45; }
+}
+
+/* buttons */
+.hero .btn-primary,
+.hero .btn-ghost {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  animation: heroSheen 3.2s ease-in-out infinite;
+}
+
+@keyframes heroSheen {
+  0% { transform: translateX(-130%); }
+  55%, 100% { transform: translateX(380%); }
+}
+
+.hero .btn-primary:active,
+.hero .btn-ghost:active {
+  transform: scale(0.95);
+}
+
+.hero .btn-primary span {
+  display: inline-block;
+  margin-left: 6px;
+  animation: heroNudge 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes heroNudge {
+  to { transform: translate(3px, -3px); }
+}
+
+/* tags */
+.hero ul.hero-proof {
+  list-style: none;
+}
+
+.hero .hero-proof span {
+  display: inline-block;
+  animation: heroTag 6s ease-in-out infinite;
+  animation-delay: calc(2s + var(--i) * 0.5s);
+}
+
+@keyframes heroTag {
+  0%, 24%, 100% { transform: translateY(0); border-color: var(--line); color: var(--muted); }
+  12% { transform: translateY(-4px); border-color: var(--accent); color: var(--ink); }
+}
+
+/* terminal: a light runs around the border */
+.hero .hero-terminal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  padding: 1px;
+  border-radius: inherit;
+  background: conic-gradient(from var(--heroAngle), transparent 70%, var(--accent-light) 85%, transparent);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: heroOrbit 4s linear infinite;
+}
+
+@property --heroAngle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes heroOrbit {
+  to { --heroAngle: 360deg; }
+}
+
+.hero .terminal-badge {
+  animation: heroBadge 1.8s ease-out infinite;
+}
+
+@keyframes heroBadge {
+  from { box-shadow: 0 0 0 0 rgba(127, 176, 143, 0.55); }
+  to { box-shadow: 0 0 0 8px rgba(127, 176, 143, 0); }
+}
+
+.hero .terminal-status-dot {
+  animation: heroBlink 1.4s steps(1) infinite;
+}
+
+.hero .terminal-body {
+  padding: 16px 14px 14px 0;
+  line-height: 1.75;
+}
+
+.code-line {
+  display: flex;
+}
+
+.code-line.is-current {
+  background: rgba(127, 176, 143, 0.09);
+}
+
+.code-number {
+  flex: 0 0 38px;
+  padding-right: 12px;
+  text-align: right;
+  color: #5d665f;
+  user-select: none;
+}
+
+.code-line.is-current .code-number {
+  color: var(--accent-light);
+}
+
+.code-line code {
+  min-width: 0;
+  font-family: inherit;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.code-rest {
+  visibility: hidden;
+}
+
+.code-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.15em;
+  margin-right: -2px;
+  vertical-align: text-bottom;
+  background: #50fa7b;
+  box-shadow: 0 0 8px #50fa7b;
+}
+
+.code-caret.is-idle {
+  animation: heroBlink 1s steps(1) infinite;
+}
+
+.code-status {
+  display: flex;
+  gap: 14px;
+  padding: 7px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(127, 176, 143, 0.1);
+  font-family: Consolas, Menlo, monospace;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.code-state {
+  margin-right: auto;
+  color: var(--accent-light);
+}
+
+@media (max-width: 540px) {
+  .hero .terminal-body {
+    font-size: 12px;
+  }
+
+  .code-number {
+    flex-basis: 32px;
+    padding-right: 10px;
+  }
+
+  .hero .hero-actions a {
+    flex: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero *,
+  .hero *::before,
+  .hero *::after {
+    animation: none !important;
+  }
+
+  .hero .btn-primary::after,
+  .hero .hero-underline::after {
+    display: none;
+  }
+}
