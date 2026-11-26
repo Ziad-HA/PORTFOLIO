@@ -20,21 +20,14 @@
 .app .service-card h3 { font-size: 18px; }
 
 .app .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
-.app .project-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.app .project-card:first-child { grid-column: 1 / -1; }
 .app .project-media { height: auto; aspect-ratio: 2.26 / 1; }
 .app .project-media img { padding: 0; width: 100%; height: 100%; object-fit: cover; }
+/* STREET is the featured project: full width on top */
+.app .project-card:first-child .project-body h3 { font-size: clamp(22px, 3.4vw, 36px); }
 .app .project-body { padding: 18px; }
 .app .project-body h3 { font-size: 22px; }
 .app .project-details { margin-top: 12px; }
-
-@media (min-width: 700px) {
-  /* the odd one out lies on its side so it stays short */
-  .app .project-card:last-child:nth-child(odd) {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    align-items: center;
-  }
-}
 
 @media (max-width: 699px) {
   .app .section { padding-top: 36px; padding-bottom: 36px; }
@@ -49,9 +42,11 @@
   .app .project-links { flex-direction: column; gap: 2px; font-size: 10px; }
   .app .project-links a { display: flex; align-items: center; justify-content: space-between; min-height: 32px; }
 
-  /* the full-width card has room for its description */
-  .app .project-card:last-child:nth-child(odd) .project-body > p { display: block; font-size: 13px; margin-bottom: 8px; }
-  .app .project-card:last-child:nth-child(odd) .project-links { flex-direction: row; gap: 20px; }
+  /* the featured card has room for its description */
+  .app .project-card:first-child .project-body > p { display: block; font-size: 13px; margin-bottom: 8px; }
+  .app .project-card:first-child .project-links { flex-direction: row; gap: 20px; }
+  .app .project-card:first-child .project-body { padding: 14px; }
+  .app .project-card:first-child .project-media { aspect-ratio: 1.8 / 1; }
 
 
   .app .skill-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }

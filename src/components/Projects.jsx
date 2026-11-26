@@ -17,7 +17,7 @@ export default function Projects() {
           <motion.article key={project.number} className="project-card featured-project" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ delay: index * 0.08, duration: 0.65 }} whileHover={{ y: -5 }}>
             <a className="project-media" href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title} live website`}>
               <img src={project.image} alt={project.alt} loading="lazy" decoding="async" width="1200" height="760" onError={(e) => { e.currentTarget.style.display = 'none' }} />
-              <div className="project-image-overlay"><span>{project.number} / SELECTED WORK</span><span>VIEW LIVE ↗</span></div>
+              <div className="project-image-overlay"><span>{project.number} / SELECTED WORK</span><span>VIEW LIVE</span></div>
               <div className="project-scan" />
             </a>
 
@@ -38,8 +38,8 @@ export default function Projects() {
 
               <ul className="tags">{project.stack.map((item) => <li key={item}>{item}</li>)}</ul>
               <div className="project-links">
-                <a href={project.live} target="_blank" rel="noopener noreferrer">{project.liveLabel ?? 'LIVE DEMO'} <span>↗</span></a>
-                <a href={project.repo} target="_blank" rel="noopener noreferrer">SOURCE CODE <span>↗</span></a>
+                <a href={project.live} target="_blank" rel="noopener noreferrer">{project.liveLabel ?? 'LIVE DEMO'}</a>
+                <a href={project.repo} target="_blank" rel="noopener noreferrer">SOURCE CODE</a>
               </div>
             </div>
           </motion.article>

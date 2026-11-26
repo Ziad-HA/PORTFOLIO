@@ -110,14 +110,11 @@
   transform: scale(0.95);
 }
 
-.hero .btn-primary span {
-  display: inline-block;
-  margin-left: 6px;
-  animation: heroNudge 1.4s ease-in-out infinite alternate;
-}
-
-@keyframes heroNudge {
-  to { transform: translate(3px, -3px); }
+.hero .cta-work {
+  margin-left: 0.15em;
+  font-size: 1.5em;
+  font-weight: 800;
+  vertical-align: -0.06em;
 }
 
 /* tags */
@@ -266,4 +263,16 @@
   .hero .hero-underline::after {
     display: none;
   }
+}
+
+/* keep the call to action on one line next to the larger word */
+.hero .btn-primary { white-space: nowrap; }
+
+@media (max-width: 540px) {
+  .hero .hero-actions a { min-height: 50px; padding: 0 10px; font-size: 11px; letter-spacing: 0.06em; white-space: nowrap; }
+  .hero .hero-actions .btn-primary { flex: 1.35; }
+}
+
+@media (max-width: 360px) {
+  .hero .hero-actions a { flex: 1 1 100%; }
 }

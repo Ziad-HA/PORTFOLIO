@@ -11,17 +11,17 @@ export default function Contact() {
         <h2>LET’S MAKE<br /><span>IT WORK.</span></h2>
         <p className="contact-intro">Tell me what you’re building, what you need, and when you want to launch. I’ll get back to you so we can discuss the right next step.</p>
         <div className="contact-row">
-          {whatsappNumber && <a className="btn-primary" href={whatsappUrl} target="_blank" rel="noopener noreferrer">Start a WhatsApp chat <span aria-hidden="true">↗</span></a>}
-          <a className="btn-ghost" href="mailto:zh.nobii@gmail.com?subject=Website%20project%20inquiry">Send an email <span aria-hidden="true">↗</span></a>
+          {whatsappNumber && <a className="btn-primary" href={whatsappUrl} target="_blank" rel="noopener noreferrer">Start a WhatsApp chat</a>}
+          <a className="btn-ghost" href="mailto:zh.nobii@gmail.com?subject=Website%20project%20inquiry">Send an email</a>
         </div>
         <div className="contact-socials">
-          <a href="https://github.com/Ziad-HA/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/z-nobii/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          <a href="https://instagram.com/zi4dddd" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          <a href="https://github.com/Ziad-HA/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/z-nobii/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://instagram.com/zi4dddd" target="_blank" rel="noopener noreferrer">Instagram</a>
           <span>Alexandria, Egypt · Available for selected projects</span>
         </div>
       </motion.div>
-      <footer className="footer"><span>© {new Date().getFullYear()} NOBI</span><a href="#top">BACK TO TOP ↑</a></footer>
+      <footer className="footer"><span>© {new Date().getFullYear()} NOBI</span><a href="#top">BACK TO TOP</a></footer>
     </section>
   )
 }
